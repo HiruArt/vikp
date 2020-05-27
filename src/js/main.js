@@ -17,7 +17,9 @@ $(document).ready(function(){
 	// 	src: 'data-blazy'
 	// });
 
-	AOS.init();
+	AOS.init({
+		duration: 500
+	});
 
 	/*validation start*/
 
