@@ -68,7 +68,7 @@ block content
 					.video-block-item__inner
 						//a(href="javascript:void(0);" style="background-image: url('../img/about/video-bg.png');" data-modal-class="about-video-popup").video-block-item__i
 						video(width='100%' height='auto' poster="./img/about/video-bg-1.png" controls).video-block-item__i#about-video
-							source(src='./media/video-vikna-plus.mp4', type='video/mp4')
+							source(src='https://frontend.topden.net/viknaplus/media/video-vikna-plus.mp4' type='video/mp4')
 		section
 			.btn-block
 				.btn-block__inner
@@ -237,12 +237,12 @@ block content
 										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
 									.request-block__row
 										.site-input
-											input(type="text" id="requestFormName2")
+											input(type="text" id="requestFormName2" data-valid="name")
 											label(for="requestFormName2")
 												span Ім'я*
 									.request-block__row
 										.site-input
-											input(type="tel" id="requestFormPhone2")
+											input(type="tel" id="requestFormPhone2" data-mask="+99(999)9999999")
 											label(for="requestFormPhone2")
 												span Телефон*
 									.request-block__row
@@ -252,7 +252,7 @@ block content
 												span E-mail*
 
 									.request-block__btn
-										a(href="#").site-btn.request-block__btn-i Відправити заявку
+										a(href="javascript:void(0);").submit-btn.site-btn.request-block__btn-i Відправити заявку
 
 
 

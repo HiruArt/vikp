@@ -17,7 +17,58 @@ $(document).ready(function(){
 	// 	src: 'data-blazy'
 	// });
 
+	AOS.init();
 
+	/*validation start*/
+
+	$('form .submit-btn').click(function (e) {
+		e.preventDefault();
+		if($(this).closest('form').find('input[type="email"]')) {
+			var reg = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+
+			var input = $(this).closest('form').find('input[type="email"]');
+			var email = $(this).closest('form').find('input[type="email"]').length > 0
+				? $(this).closest('form').find('input[type="email"]')
+				: false;
+
+
+			if (email.val() == "" && email !== false) {
+				email.closest('.site-input').addClass('error-field');
+
+			} else {
+				if (reg.test(email.val()) == false) {
+					email.closest('.site-input').addClass('error-field');
+
+				} else {
+					email.closest('.site-input').removeClass('error-field');
+					$(this.closest('form')).addClass('active');
+				}
+			}
+		}
+
+		var reg2 = /[а-яА-ЯёЁ]/g;
+		$(this).closest('form').find('input[data-valid="name"]').each(function () {
+			if($(this).val() === '' || $(this).val().search(reg2) !==  -1){
+				$(this).closest('.site-input').addClass('error-field');
+				$(this).closest('.site-input').removeClass('correct');
+			} else {
+				$(this).closest('.site-input').addClass('correct');
+				$(this).closest('.site-input').removeClass('error-field');
+			}
+		});
+
+		if($(this).closest('form').find('input[type="tel"]').val().length === 16 && $(this).closest('form').find('input[type="tel"]').val().indexOf('_') === -1) {
+			$(this).closest('.site-input').addClass('correct');
+			$(this).closest('.site-input').removeClass('error-field');
+		}
+	});
+
+	var phoneMask = $('input[type="tel"]').attr('data-mask');
+	console.log(phoneMask);
+	VMasker(document.querySelectorAll("input[type='tel]")).maskPattern(phoneMask);
+
+
+	/*validation end*/
 
 	/*menu function*/
 	$('#menu-btn').click(function(){

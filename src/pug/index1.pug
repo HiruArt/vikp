@@ -22,7 +22,7 @@ block content
 							.big-slider__item-content
 								.big-slider-img
 									video(width='100%' height='auto' autoplay='autoplay' loop='loop' muted='muted')
-										source(src='./media/video-vikna-plus.mp4' type='video/mp4')
+										source(src='https://frontend.topden.net/viknaplus/media/video-vikna-plus.mp4' type='video/mp4')
 						.big-slider__item
 							.big-slider__item-content
 								.big-slider-img
@@ -70,8 +70,6 @@ block content
 
 					.big-slider__partner
 						.big-slider__partner-list
-							.big-slider__partner-item
-								img(src="./img/home/logo-veka.png" alt="partner")
 							.big-slider__partner-item
 								img(src="./img/home/logo-veka.png" alt="partner")
 
@@ -276,12 +274,12 @@ block content
 										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
 									.request-block__row
 										.site-input
-											input(type="text" id="requestFormName")
+											input(type="text" id="requestFormName" data-valid="name")
 											label(for="requestFormName")
 												span Ім'я*
 									.request-block__row
 										.site-input
-											input(type="tel" id="requestFormPhone")
+											input(type="tel" id="requestFormPhone" data-mask="+99(999)9999999")
 											label(for="requestFormPhone")
 												span Телефон*
 									.request-block__row
@@ -291,7 +289,7 @@ block content
 												span E-mail*
 
 									.request-block__btn
-										a(href="#").site-btn.request-block__btn-i Відправити заявку
+										a(href="javascript:void(0);").submit-btn.site-btn.request-block__btn-i Відправити заявку
 
 
 		section
@@ -587,12 +585,12 @@ block content
 										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
 									.request-block__row
 										.site-input
-											input(type="text" id="requestFormName2")
+											input(type="text" id="requestFormName2" data-valid="name")
 											label(for="requestFormName2")
 												span Ім'я*
 									.request-block__row
 										.site-input
-											input(type="tel" id="requestFormPhone2")
+											input(type="tel" id="requestFormPhone2" data-mask="+99(999)9999999")
 											label(for="requestFormPhone2")
 												span Телефон*
 									.request-block__row
@@ -602,7 +600,7 @@ block content
 												span E-mail*
 
 									.request-block__btn
-										a(href="#").site-btn.request-block__btn-i Відправити заявку
+										a(href="javascript:void(0);").submit-btn.site-btn.request-block__btn-i Відправити заявку
 
 
 		section
