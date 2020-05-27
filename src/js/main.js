@@ -23,6 +23,18 @@ $(document).ready(function(){
 
 	$('form .submit-btn').click(function (e) {
 		e.preventDefault();
+
+		if($(this).closest('form').find('input[type="tel"]').length != 0) {
+			var inputTel = $(this).closest('form').find('input[type="tel"]');
+			if (inputTel.val().indexOf('_') === -1 && inputTel.val() != 0) {
+				$(inputTel).closest('.site-input').addClass('correct');
+				$(inputTel).closest('.site-input').removeClass('error-field');
+			} else {
+				$(inputTel).closest('.site-input').removeClass('correct');
+				$(inputTel).closest('.site-input').addClass('error-field');
+			}
+		}
+
 		if($(this).closest('form').find('input[type="email"]')) {
 			var reg = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 
@@ -46,9 +58,8 @@ $(document).ready(function(){
 			}
 		}
 
-		var reg2 = /[а-яА-ЯёЁ]/g;
 		$(this).closest('form').find('input[data-valid="name"]').each(function () {
-			if($(this).val() === '' || $(this).val().search(reg2) !==  -1){
+			if($(this).val() === ''){
 				$(this).closest('.site-input').addClass('error-field');
 				$(this).closest('.site-input').removeClass('correct');
 			} else {
@@ -56,17 +67,10 @@ $(document).ready(function(){
 				$(this).closest('.site-input').removeClass('error-field');
 			}
 		});
-
-		if($(this).closest('form').find('input[type="tel"]').val().length === 16 && $(this).closest('form').find('input[type="tel"]').val().indexOf('_') === -1) {
-			$(this).closest('.site-input').addClass('correct');
-			$(this).closest('.site-input').removeClass('error-field');
-		}
 	});
 
-	var phoneMask = $('input[type="tel"]').attr('data-mask');
-	console.log(phoneMask);
-	VMasker(document.querySelectorAll("input[type='tel]")).maskPattern(phoneMask);
-
+	var phoneMask = $('input[type="tel"]');
+	$(phoneMask).inputmask('+380 (99) 999 99 99');
 
 	/*validation end*/
 

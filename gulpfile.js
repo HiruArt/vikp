@@ -88,7 +88,7 @@ gulp.task('js-libs', () => {
       'node_modules/swiper/js/swiper.min.js',
 			'node_modules/jquery-ui-dist/jquery-ui.min.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-      'node_modules/vanilla-masker/build/vanilla-masker.min.js',
+      'node_modules/inputmask/dist/jquery.inputmask.min.js',
     ])
     .pipe(gulp.dest('dist/js/libs/'))
     .pipe(concat('libs.js'))
