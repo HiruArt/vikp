@@ -4724,6 +4724,10 @@ input, textarea, button{
 
     &.active{
       color: white;
+
+      &:before{
+        background: white !important;
+      }
     }
 
     @include for-550{

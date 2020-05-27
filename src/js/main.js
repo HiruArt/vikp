@@ -468,18 +468,40 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		console.log($(this).data('type-img'));
 		var img = $(this).data('type-img');
-		$('.window-color__img-i').css('background', 'url("' + img +'")');
+
+		$('.window-color__img-i').css('opacity', '0');
+
+		setTimeout(function () {
+			$('.window-color__img-i').css('background', 'url("' + img +'")');
+		}, 100);
+
+		setTimeout(function () {
+			$('.window-color__img-i').css('opacity', '1');
+		}, 500);
+
 
 		var img2 = $(this).find('img').attr('src');
 		$('.window-slider__bottom').css('background', 'url("' + img2 +'")');
+
+		var name = $(this).attr('data-name');
+		$('.window-slider__bottom-t').html(name);
+
+		var num = $(this).attr('data-num');
+		$('.window-slider__bottom-c').html(num);
 	});
 
 	$('.window-popup__accord-title').click(function () {
+		$('.window-popup__accord-i').removeClass('active');
 		$(this).parent().toggleClass('active');
 	});
 
 	var vidWinFlag = true;
 	var numCounFlag = true;
+	var scrollItem = 200;
+
+	if($(document).width() < 992){
+		scrollItem = 0;
+	}
 
 	var target = $('.revolution').length > 0 ? $('.revolution') : false;
 	var targetPos = target !== false ? target.offset().top : 0;
@@ -494,8 +516,8 @@ $(document).ready(function(){
 		var winScrollTop = $(this).scrollTop();
 
 		if(winScrollTop > scrollToElem + 200 && $('#video-window').length > 0 && vidWinFlag){
-			document.getElementById('video-window').play();
 			vidWinFlag = false;
+
 		}
 
 		if(winScrollTop > scrollToElem2 + 200 && $('#about-num-count').length > 0 && numCounFlag){
@@ -516,33 +538,11 @@ $(document).ready(function(){
 	});
 
 
+	$('.show-video').click(function () {
+		$('#video-window').get(0).play()
+	})
 
-	// var numCounFlag = true;
-	//
-	// var target2 = $('#about-video').length > 0 ? $('#about-video') : false;
-	// var targetPos2 = target !== false ? target2.offset().top : 0;
-	// var winHeight2 = $(window).height();
-	// var scrollToElem2 = targetPos2 - winHeight2;
-	// $(window).scroll(function(){
-	// 	var winScrollTop2 = $(this).scrollTop();
-	// 	if(winScrollTop2 > scrollToElem2 + 200 && ($('#about-video').length > 0) && numCounFlag){
-	//
-	//
-	// 		$('.about-numbers__num').each(function () {
-	// 			var $this = $(this);
-	// 			jQuery({Counter: 0}).animate({Counter: $this.text()}, {
-	// 				duration: 1000,
-	// 				easing: 'swing',
-	// 				step: function () {
-	// 					$this.text(Math.ceil(this.Counter));
-	// 				}
-	// 			});
-	// 		});
-	//
-	// 		numCounFlag == false;
-	//
-	// 	}
-	// });
+
 
 });
 
