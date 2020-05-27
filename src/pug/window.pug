@@ -1,0 +1,342 @@
+extends _layout
+
+block vars
+	- var pageTitle = "Home page";
+	- var pageClass = "window";
+
+block content
+
+	div.main-wrap
+		section
+			.window-top
+				.window-top__title Revolution
+				.window-top__caption Інноваційна профільна система для тих, <br> хто звик випереджати час
+
+		section
+			.double-block
+				.double-block__inner
+					.revolution
+						.double-block__item
+							.revolution__title.site-title Revolution
+							.revolution__img
+								video(width='100', height='100', autoplay="false" id="video-window")
+									source(src='https://www.drutex.eu/media/_upload/produkty/iglo5-classic/video/iglo_5_classic.mp4', type='video/mp4')
+					.revolution-right
+						.double-block__item
+							.revolution-right__tabs
+								.revolution-right__tabs-top
+									a(href="javascript:void(0)").revolution-right__tab.active опис системи
+									a(href="javascript:void(0)").revolution-right__tab Переваги
+								.revolution-right__content
+									.revolution-right__content-i.active
+										.revolution-right__content-t Профільна система: Revolution
+										.revolution-right__content-txt Час не стоїть на місці, як і не стоїть на місці прогрес. Для тих, хто звик випереджати час, задавати вектор першості, бути лідером в інноваціях, ми пропонуємо абсолютно інноваційний продукт - VEKA Revolution.
+									.revolution-right__content-i
+										.revolution-right__content-t Профільна система: Revolution 2
+										.revolution-right__content-txt Час не стоїть на місці, як і не стоїть на місці прогрес. Для тих, хто звик випереджати час, задавати вектор першості, бути лідером в інноваціях, ми пропонуємо абсолютно інноваційний продукт - VEKA Revolution.
+
+
+							.revolution-right__btn
+								a(href="#").site-btn.revolution-right__btn-i Дивитись відео
+								a(href="javascript:void(0)" data-modal-class="window-popup").site-btn.revolution-right__btn-i Технічна інформація
+
+
+		section
+			.features
+				.block-wrap
+					.site-title.site-title--white Особливості
+
+					.features__items
+						.features__item
+							.features__img
+								img(src="./img/window/w-feat-1.png")
+							.features__title Профіль
+							.features__desc 5-камерні профілі рами і стулки виконані виключно з першокласного матеріалу класу А з глибиною монтажу 70 мм.
+						.features__item
+							.features__img
+								img(src="./img/window/w-feat-2.png")
+							.features__title Армування
+							.features__desc 5-камерні профілі рами і стулки виконані виключно з першокласного матеріалу класу А з глибиною монтажу 70 мм.
+						.features__item
+							.features__img
+								img(src="./img/window/w-feat-3.png")
+							.features__title Фурнітура
+							.features__desc 5-камерні профілі рами і стулки виконані виключно з першокласного матеріалу класу А з глибиною монтажу 70 мм.
+
+
+		section
+			.double-block
+				.double-block__inner
+					.window-color
+						.double-block__item
+							.window-color__title.site-title Revolution
+							.window-color__img
+								.window-color__img-i(style="background: url('./img/window/icon/img-window (1).png')")
+					.window-slider
+						.double-block__item
+							.window-slider__title Відтінки кольорів:
+							.window-slider__slider.swiper-container#winow-slider
+								.swiper-wrapper
+									.window-slider__item.swiper-slide
+										.window-slider__item-content
+											.window-slider__img.active(data-type-img="./img/window/icon/img-window (1).png")
+												img(src="./img/window/icon-small/1.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (2).png")
+												img(src="./img/window/icon-small/2.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (3).png")
+												img(src="./img/window/icon-small/3.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (4).png")
+												img(src="./img/window/icon-small/4.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (5).png")
+												img(src="./img/window/icon-small/5.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (6).png")
+												img(src="./img/window/icon-small/6.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/home/big-slider01.png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (7).png")
+												img(src="./img/window/icon-small/7.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (8).png")
+												img(src="./img/window/icon-small/8.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (9).png")
+												img(src="./img/window/icon-small/9.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (10).png")
+												img(src="./img/window/icon-small/10.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (11).png")
+												img(src="./img/window/icon-small/11.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (12).png")
+												img(src="./img/window/icon-small/12.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/home/big-slider02.png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (13).png")
+												img(src="./img/window/icon-small/13.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (14).png")
+												img(src="./img/window/icon-small/14.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (15).png")
+												img(src="./img/window/icon-small/15.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (16).png")
+												img(src="./img/window/icon-small/16.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (17).png")
+												img(src="./img/window/icon-small/17.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (18).png")
+												img(src="./img/window/icon-small/18.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/home/big-slider03.png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (19).png")
+												img(src="./img/window/icon-small/19.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (20).png")
+												img(src="./img/window/icon-small/20.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (21).png")
+												img(src="./img/window/icon-small/12.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (22).png")
+												img(src="./img/window/icon-small/22.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (23).png")
+												img(src="./img/window/icon-small/23.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (24).png")
+												img(src="./img/window/icon-small/24.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/window/icon/img-window (1).png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (25).png")
+												img(src="./img/window/icon-small/25.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (26).png")
+												img(src="./img/window/icon-small/26.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (27).png")
+												img(src="./img/window/icon-small/27.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (28).png")
+												img(src="./img/window/icon-small/28.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (29).png")
+												img(src="./img/window/icon-small/29.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (30).png")
+												img(src="./img/window/icon-small/30.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/window/icon/img-window (1).png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (31).png")
+												img(src="./img/window/icon-small/31.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (32).png")
+												img(src="./img/window/icon-small/32.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (33).png")
+												img(src="./img/window/icon-small/33.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (34).png")
+												img(src="./img/window/icon-small/34.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (35).png")
+												img(src="./img/window/icon-small/35.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (36).png")
+												img(src="./img/window/icon-small/36.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/window/icon/img-window (1).png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (37).png")
+												img(src="./img/window/icon-small/37.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (38).png")
+												img(src="./img/window/icon-small/38.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (39).png")
+												img(src="./img/window/icon-small/39.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (40).png")
+												img(src="./img/window/icon-small/40.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (41).png")
+												img(src="./img/window/icon-small/41.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (42).png")
+												img(src="./img/window/icon-small/42.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide(data-type-img="./img/window/icon/img-window (1).png")
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (43).png")
+												img(src="./img/window/icon-small/43.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (44).png")
+												img(src="./img/window/icon-small/44.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (45).png")
+												img(src="./img/window/icon-small/45.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (46).png")
+												img(src="./img/window/icon-small/46.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (47).png")
+												img(src="./img/window/icon-small/47.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (48).png")
+												img(src="./img/window/icon-small/48.jpg" alt="img").window-slider__img-i
+									.window-slider__item.swiper-slide
+										.window-slider__item-content
+											.window-slider__img(data-type-img="./img/window/icon/img-window (49).png")
+												img(src="./img/window/icon-small/49.jpg" alt="img").window-slider__img-i
+											.window-slider__img(data-type-img="./img/window/icon/img-window (50).png")
+												img(src="./img/window/icon-small/50.jpg" alt="img").window-slider__img-i
+
+
+							.swiper-button-wrap
+								.swiper-button-prev
+								.swiper-button-next
+
+							.window-slider__bottom(style='background: url(./img/window/icon-small/1.jpg);')
+								.window-slider__bottom-t Golden Oak
+								.window-slider__bottom-c 2178001
+
+
+
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Галерея робiт
+
+			.our-work
+				.our-work__inner
+					.our-work__content
+						.our-work__slider#our-work-slider
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-half(style="background-image: url('./img/home/our-work02.png');")
+										a(href="./img/home/our-work02.png").our-work__link
+											.our-work__hover Орден Палац
+									.our-work__item-half(style="background-image: url('./img/home/our-work03.png');")
+										a(href="./img/home/our-work03.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Iнші профільні системи
+
+			.window
+				.window__inner
+					.window__content
+						.window__list.window__list-wide
+							.window__item
+								.window__item-content
+									a(href="#" style="background-image: url('./img/home/window01.png');").window__img
+										//img(src="./img/home/window01.png" alt="img").window__img-i
+									.window__item-inner
+										a(href="#").window__name спальня
+										a(href="#").window__caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							.window__item
+								.window__item-content
+									a(href="#"  style="background-image: url('./img/home/window02.png');").window__img
+										//img(src="./img/home/window02.png" alt="img").window__img-i
+									.window__item-inner
+										a(href="#").window__name їдальня
+										a(href="#").window__caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							.window__item
+								.window__item-content
+									a(href="#"  style="background-image: url('./img/home/window03.png');").window__img
+										//img(src="./img/home/window03.png" alt="img").window__img-i
+									.window__item-inner
+										a(href="#").window__name кухня
+										a(href="#").window__caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							.window__item
+								.window__item-content
+									a(href="#"  style="background-image: url('./img/home/window04.png');").window__img
+										//img(src="./img/home/window04.png" alt="img").window__img-i
+									.window__item-inner
+										a(href="#").window__name зал
+										a(href="#").window__caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+
+
+
+
+
+
+		section
+			.double-block
+				.double-block__inner
+					.history-block
+						.double-block__item
+							.history-block__inner
+								.site-title Iсторiя компанії
+								.history-block__content
+									h2 ВікноПлюс - надійній виробник по виготовленню металлопластиковіх вікон та дверей
+									.seo-content.history-block__txt
+										p
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+											| <br>
+											| <br>
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+										a(href="javascript:void(0);").seo-content__more-btn.history-block__more-btn
+					.request-block.request-block--bg2
+						.double-block__item
+							.request-block__inner
+								form(action="#").request-block__from
+									.request-block__title
+										span.request-block__title-main Залишити заявку
+										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
+									.request-block__row
+										.site-input
+											input(type="text" id="requestFormName2")
+											label(for="requestFormName2")
+												span Ім'я*
+									.request-block__row
+										.site-input
+											input(type="tel" id="requestFormPhone2")
+											label(for="requestFormPhone2")
+												span Телефон*
+									.request-block__row
+										.site-input
+											input(type="email" id="requestFormEmail2")
+											label(for="requestFormEmail2")
+												span E-mail*
+
+									.request-block__btn
+										a(href="#").site-btn.request-block__btn-i Відправити заявку
+
+
+
+
+

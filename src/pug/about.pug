@@ -1,0 +1,260 @@
+extends _layout
+
+block vars
+	- var pageTitle = "about page";
+	- var pageClass = "aboutpage";
+
+block content
+	div.main-wrap
+		section
+			.site-top
+				.site-top__inner(style="background-image: url('./img/about/about-top-bg.png');")
+					.site-title-hr.site-title-hr--white ВІКНОПЛЮС
+					.site-top__txt Виробник якісних вікон
+
+		section
+			.double-block
+				.double-block__inner
+					.about-info
+						.double-block__item
+							.about-info__inner
+								.site-title.site-title--white 20 років розвитку, інновацій та успіху
+								.about-info__content
+									span Наша місія
+									h3 ТМ «Вікно Плюс» – націлена на високий комфорт клієнта, максимальне задоволення його потреб.
+									p ТМ «ВікноПлюс» сьогодні - це компанія, яка здатна задовІльнити запити найвимогливішого клієнта! Саме таку репутацію серед своїх бізнес-партнерів і клієнтів отримала компанія за роки своєї роботи. Ми не виробляємо та не продаєм дешеві вікна. Вікна високої якості не можуть бути дешевими. Але якість наших виробів коштує кожної гривні, яку Ви за неї заплатите.
+									p ТМ «ВікноПлюс» з впевненістю дивиться у майбутнє та запрошує Вас до співпраці. Ми працюємо для того, щоб у будинках наших клієнтів було сонячне світло, тепло та затишок!
+									br
+									br
+									p
+										strong ТМ «Вікно Плюс» - це понад півмільйона задоволених клієнтів.
+
+					.about-numbers
+						.double-block__item
+							.about-numbers__inner
+								.about-numbers__content#about-num-count
+									.about-numbers__row
+										.about-numbers__num 23
+										.about-numbers__name Років досвіду
+									.about-numbers__row
+										.about-numbers__num 300
+										.about-numbers__name Робочих місць на виробництві
+									.about-numbers__row
+										.about-numbers__num 152
+										.about-numbers__name Віконних салонів працює по Украіні
+									.about-numbers__row
+										.about-numbers__num 500
+										.about-numbers__name Виробів на добу
+									.about-numbers__row
+										.about-numbers__num 1526
+										.about-numbers__name Представників по всій краіні
+
+
+		section
+		.double-block
+			.double-block__inner
+				.video-block
+					.double-block__item
+						.video-block__inner
+							.site-title На вершині якості
+							.video-block__content
+								.video-block__txt
+									p Завдяки високій точності на кожному етапі роботи і майстерності своїх фахівців компанія «ВікноПлюс» пропонує не просто вікна, а комплекс технічних і дизайнерських рішень.
+									| <br>
+									| Якісні комплектуючі від відомих <br>
+									| світових виробників і професійний підхід до справи формують унікальну пропозицію для найвимогливіших клієнтів.
+
+				.video-block-item
+					.video-block-item__inner
+						//a(href="javascript:void(0);" style="background-image: url('../img/about/video-bg.png');" data-modal-class="about-video-popup").video-block-item__i
+						video(width='100%' height='auto' poster="./img/about/video-bg-1.png" controls).video-block-item__i#about-video
+							source(src='./media/video-vikna-plus.mp4', type='video/mp4')
+		section
+			.btn-block
+				.btn-block__inner
+					.btn-block__list
+						.btn-block__item
+							a(href="#").btn-block__img
+								img(src="./img/about/block01.png" alt="img").btn-block__img-i
+							.btn-block__btn
+								a(href="#").site-btn.btn-block__btn-i Стати представником компанії
+						.btn-block__item
+							a(href="#").btn-block__img
+								img(src="./img/about/block02.png" alt="img").btn-block__img-i
+							.btn-block__btn
+								a(href="#").site-btn.site-btn--white.btn-block__btn-i Хочу купити вашу продукцію
+
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Наши роботи
+
+			.our-work
+				.our-work__inner
+					.our-work__content
+						.our-work__slider#our-work-slider
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-half(style="background-image: url('./img/home/our-work02.png');")
+										a(href="./img/home/our-work02.png").our-work__link
+											.our-work__hover Орден Палац
+									.our-work__item-half(style="background-image: url('./img/home/our-work03.png');")
+										a(href="./img/home/our-work03.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+
+		section
+			.double-block
+				.double-block__inner
+					.last-news
+						.double-block__item
+							.last-news__inner
+								.site-title.site-title--white Останні новини нашої компанії
+								.last-news__content
+									.last-news__slider#last-news-slider
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/last-news-img.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+								.last-news__more-mobile
+									a(href="#").site-arrow-link.last-news__more-link Всі новини
+
+					.more-news
+						.more-news__inner
+							.more-news__head
+								a(href="#").site-arrow-link.more-news__head-link Всі новини
+							.more-news__content
+								.more-news__slider#more-news-slider
+									.more-news__item
+										.more-news__img
+											.more-news__img-i(style="background-image('');")
+
+			.last-news__bottom-block
+				.block-wrap.last-news__bottom-block-inner
+					.last-news__bottom
+						.last-news__bottom-list
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+
+		section
+			.double-block
+				.double-block__inner
+
+					.history-block
+						.double-block__item
+							.history-block__inner
+								.site-title Iсторiя компанії
+								.history-block__content
+									h2 ВікноПлюс - надійній виробник по виготовленню металлопластиковіх вікон та дверей
+									.seo-content.history-block__txt
+										p
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+											| <br>
+											| <br>
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+										a(href="javascript:void(0);").seo-content__more-btn.history-block__more-btn
+					.request-block.request-block--bg2
+						.double-block__item
+							.request-block__inner
+								form(action="#").request-block__from
+									.request-block__title
+										span.request-block__title-main Залишити заявку
+										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
+									.request-block__row
+										.site-input
+											input(type="text" id="requestFormName2")
+											label(for="requestFormName2")
+												span Ім'я*
+									.request-block__row
+										.site-input
+											input(type="tel" id="requestFormPhone2")
+											label(for="requestFormPhone2")
+												span Телефон*
+									.request-block__row
+										.site-input
+											input(type="email" id="requestFormEmail2")
+											label(for="requestFormEmail2")
+												span E-mail*
+
+									.request-block__btn
+										a(href="#").site-btn.request-block__btn-i Відправити заявку
+
+
+
+
+

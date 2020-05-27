@@ -1,0 +1,615 @@
+extends _layout
+
+block vars
+	- var pageTitle = "Home page";
+	- var pageClass = "homepage";
+
+block content
+	//.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+		<picture>
+			<source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+			<source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+			<img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
+		</picture>
+
+	div.main-wrap
+		section
+			.big-slider
+				.big-slider__inner
+					.big-slider__slider#big-slider
+						.big-slider__item
+							.big-slider__item-content
+								.big-slider-img
+									video(width='100%' height='auto' autoplay='autoplay' loop='loop' muted='muted')
+										source(src='./media/video-vikna-plus.mp4' type='video/mp4')
+						.big-slider__item
+							.big-slider__item-content
+								.big-slider-img
+									img(src="./img/home/big-slider01.png" alt="img").big-slider-img-i
+								.block-wrap
+									.big-slider__content
+										.big-slider__title ВікноПлюс
+										.big-slider__subtitle Дарує радість в кожний дім
+										.big-slider__desc Ми впроваджуємо найновіші технології виробництва та сервісу, що дозволяє нам забезпечити максимальний комфорт для клієнтів.
+										.big-slider__txt ТМ «Вікно Плюс» - українська віконна компанія повного циклу
+										.big-slider__btn
+											a(href="#").site-btn.big-slider__btn-i Дiзнатись бiльше
+						.big-slider__item
+							.big-slider__item-content
+								.big-slider-img
+									img(src="./img/home/big-slider02.png" alt="img").big-slider-img-i
+								.block-wrap
+									.big-slider__content
+										.big-slider__title ВікноПлюс
+										.big-slider__subtitle Дарує радість в кожний дім
+										.big-slider__desc Ми впроваджуємо найновіші технології виробництва та сервісу, що дозволяє нам забезпечити максимальний комфорт для клієнтів.
+										.big-slider__txt ТМ «Вікно Плюс» - українська віконна компанія повного циклу
+										.big-slider__btn
+											a(href="#").site-btn.big-slider__btn-i Дiзнатись бiльше
+
+						.big-slider__item
+							.big-slider__item-content
+								.big-slider-img
+									img(src="./img/home/big-slider03.png" alt="img").big-slider-img-i
+								.block-wrap
+									.big-slider__content
+										.big-slider__btn
+											a(href="#").site-btn.big-slider__btn-i Дiзнатись бiльше
+						.big-slider__item
+							.big-slider__item-content
+								.big-slider-img
+									img(src="./img/home/big-slider04.png" alt="img").big-slider-img-i
+								.block-wrap
+									.big-slider__content
+										.big-slider__title ВікноПлюс
+										.big-slider__subtitle 21 рік досвіду
+										.big-slider__desc 1999 - 2020
+										.big-slider__btn
+											a(href="#").site-btn.big-slider__btn-i Дiзнатись бiльше
+
+					.big-slider__partner
+						.big-slider__partner-list
+							.big-slider__partner-item
+								img(src="./img/home/logo-veka.png" alt="partner")
+							.big-slider__partner-item
+								img(src="./img/home/logo-veka.png" alt="partner")
+
+		section.our-products__section
+			.block-wrap.site-title-wrap
+				.site-title Наша продукцiя
+
+			.our-products
+				.our-products__inner
+					.our-products__content
+						.our-products__slide#our-products-slider
+							.our-products__slide-item
+								.our-products__slide-content(style="background-image: url('./img/home/our-products-slide.png');")
+									.our-products__slide-txt
+										| Наша робота - це індивідуальний
+										| підхід до кожного клієнта. <br>
+									.our-products__slide-btn
+										a(href="#").site-btn.our-products__slide-btn-i Дiзнатись бiльше
+							.our-products__slide-item
+								.our-products__slide-content(style="background-image: url('./img/home/our-products-slide.png');")
+									.our-products__slide-txt
+										| Ми завжди допоможемо вам
+										| вибрати вікна, які створять теплу,
+										| тиху і затишну атмосферу
+										| вашого будинку.
+									.our-products__slide-btn
+										a(href="#").site-btn.our-products__slide-btn-i Дiзнатись бiльше
+							.our-products__slide-item
+								.our-products__slide-content(style="background-image: url('./img/home/our-products-slide.png');")
+									.our-products__slide-txt
+										| Наша робота - це індивідуальний
+										| підхід до кожного клієнта. <br>
+										| <br>
+										| Ми завжди допоможемо вам
+										| вибрати вікна, які створять теплу,
+										| тиху і затишну атмосферу
+										| вашого будинку.
+									.our-products__slide-btn
+										a(href="#").site-btn.our-products__slide-btn-i Дiзнатись бiльше
+							.our-products__slide-item
+								.our-products__slide-content(style="background-image: url('./img/home/our-products-slide.png');")
+									.our-products__slide-btn
+										a(href="#").site-btn.our-products__slide-btn-i Дiзнатись бiльше
+							.our-products__slide-item
+								.our-products__slide-content(style="background-image: url('./img/home/our-products-slide.png');")
+									.our-products__slide-txt
+										| Наша робота - це індивідуальний
+										| підхід до кожного клієнта. <br>
+										| <br>
+										| Ми завжди допоможемо вам
+										| вибрати вікна, які створять теплу,
+										| тиху і затишну атмосферу
+										| вашого будинку.
+									.our-products__slide-btn
+										a(href="#").site-btn.our-products__slide-btn-i Дiзнатись бiльше
+						.our-products__menu
+							.our-products__menu-list#our-products-slider-menu
+								.our-products__menu-item
+									a(href="javascript:void(0);").our-products__menu-link 01
+										span
+										| Вікна
+								.our-products__menu-item
+									a(href="javascript:void(0);").our-products__menu-link 02
+										span
+										| Двері
+								.our-products__menu-item
+									a(href="javascript:void(0);").our-products__menu-link 03
+										span
+										| Фасад/Зимовий сад
+								.our-products__menu-item
+									a(href="javascript:void(0);").our-products__menu-link 04
+										span
+										| Ворота/Ролети
+								.our-products__menu-item
+									a(href="javascript:void(0);").our-products__menu-link 05
+										span
+										| Аксесуари
+
+					.block-wrap.our-products__icons
+						.our-products__icons-list
+							.our-products__icons-item
+								img(src="./img/ico/6.svg" alt="ico").our-products__icons-img
+								.our-products__icons-name Досвід роботи <br> понад 20 років
+							.our-products__icons-item
+								img(src="./img/ico/7.svg" alt="ico").our-products__icons-img
+								.our-products__icons-name Індивідуальний підхід <br> до кожного клієнта
+							.our-products__icons-item
+								img(src="./img/ico/8.svg" alt="ico").our-products__icons-img
+								.our-products__icons-name Повний цикл <br> виробництва
+							.our-products__icons-item
+								img(src="./img/ico/10.svg" alt="ico").our-products__icons-img
+								.our-products__icons-name Гарантія на вікна <br> 12 років
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Вікна в кожну кімнату
+
+			.window
+				.window__inner
+					.window__content
+						.window__list
+							.window__item
+								.window__item-content
+									a(href="#").window__img
+										img(src="./img/home/window01.png" alt="img").window__img-i
+									a(href="#").window__name спальня
+							.window__item
+								.window__item-content
+									a(href="#").window__img
+										img(src="./img/home/window02.png" alt="img").window__img-i
+									a(href="#").window__name їдальня
+							.window__item
+								.window__item-content
+									a(href="#").window__img
+										img(src="./img/home/window03.png" alt="img").window__img-i
+									a(href="#").window__name кухня
+							.window__item
+								.window__item-content
+									a(href="#").window__img
+										img(src="./img/home/window04.png" alt="img").window__img-i
+									a(href="#").window__name зал
+
+		section
+			.double-block
+				.double-block__inner
+					.address-block
+						.double-block__item
+							.address-block__inner
+								.site-title.site-title--white Приходьте до нас в гості!
+								.address-block__content
+									.address-block__showroom
+										.address-block__showroom-count 152+
+										.address-block__showroom-txt високоякісних шоурумів по всій краіні
+
+									.address-block__office
+										.address-block__sity
+											.address-block__sity-select
+												select#sity.site-select
+													option(value="kiev") Київ
+													option(value="lviv") Львів
+													option(value="odessa") Одеса
+
+										.address-block__office-item(data-address="kiev")
+											.address-block__office-head
+												.address-block__office-name Офіс №1
+												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+											.address-block__office-info
+												.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+												.address-block__office-phone +38 (099) 777 77 77
+												.address-block__office-phone +38 (099) 777 77 77
+										.address-block__office-item(data-address="kiev")
+											.address-block__office-head
+												.address-block__office-name Офіс №2
+												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+											.address-block__office-info
+												.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+												.address-block__office-phone +38 (099) 777 77 77
+												.address-block__office-phone +38 (099) 777 77 77
+										.address-block__office-item(data-address="odessa")
+											.address-block__office-head
+												.address-block__office-name Офіс №3
+												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+											.address-block__office-info
+												.address-block__office-address м. Одеса, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+												.address-block__office-phone +38 (099) 777 77 77
+												.address-block__office-phone +38 (099) 777 77 77
+										.address-block__office-item(data-address="lviv")
+											.address-block__office-head
+												.address-block__office-name Офіс №4
+												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+											.address-block__office-info
+												.address-block__office-address м. Львів, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+												.address-block__office-phone +38 (099) 777 77 77
+												.address-block__office-phone +38 (099) 777 77 77
+
+					.map-block
+						.map-block__inner
+							iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24896.610995416322!2d30.524645443659377!3d50.41436909935062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1589891588407!5m2!1sru!2sua', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Безкоштовна консультація
+
+			.double-block
+				.double-block__inner
+
+					.txt-block
+						.double-block__item
+							.txt-block__inner
+								.txt-block__text
+									| Ми розробили і впровадили власні високі стандарти якості виробничих процесів і монтажних робіт.<br>
+									| <br>
+									| Ввічливі менеджери завжди проконсультують вас з будь-яких супутніх питань, і допоможуть визначитися з оптимальним варіантом профілю і склопакета.
+
+					.request-block
+						.double-block__item
+							.request-block__inner
+								form(action="#").request-block__from
+									.request-block__title
+										span.request-block__title-main Залишити заявку
+										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
+									.request-block__row
+										.site-input
+											input(type="text" id="requestFormName")
+											label(for="requestFormName")
+												span Ім'я*
+									.request-block__row
+										.site-input
+											input(type="tel" id="requestFormPhone")
+											label(for="requestFormPhone")
+												span Телефон*
+									.request-block__row
+										.site-input
+											input(type="email" id="requestFormEmail")
+											label(for="requestFormEmail")
+												span E-mail*
+
+									.request-block__btn
+										a(href="#").site-btn.request-block__btn-i Відправити заявку
+
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Кольорові вікна з ламінуванням
+
+			.double-block
+				.double-block__inner
+
+					.type-block
+						.double-block__item
+							.type-block__inner
+								.type-block__slider-wrap
+									.type-block__slider.swiper-container#type-slider
+										.swiper-wrapper
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/swamp-oak.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type01.jpg" alt="img").type-block__img-i
+													.type-block__name Болотный дуб
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/winchester.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type02.jpg" alt="img").type-block__img-i
+													.type-block__name Винчестер
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/mountain-pine.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type03.jpg" alt="img").type-block__img-i
+													.type-block__name Горная сосна
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/rustic-oak.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type04.jpg" alt="img").type-block__img-i
+													.type-block__name Дуб рустикальный
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/light-oak.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type05.jpg" alt="img").type-block__img-i
+													.type-block__name Дуб светлый
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/sheffield-oak.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type06.jpg" alt="img").type-block__img-i
+													.type-block__name Дуб шеффилд
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/brown-oak-sheffield.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type07.jpg" alt="img").type-block__img-i
+													.type-block__name Дуб шеффилд коричневый
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/Sheffield-Oak-Gray.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type08.jpg" alt="img").type-block__img-i
+													.type-block__name Дуб шеффилд серый
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/mahogany.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type09.jpg" alt="img").type-block__img-i
+													.type-block__name Махагон
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/nut.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type10.jpg" alt="img").type-block__img-i
+													.type-block__name Орех
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/fir.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type11.jpg" alt="img").type-block__img-i
+													.type-block__name Пихта
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/light-gray.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type12.jpg" alt="img").type-block__img-i
+													.type-block__name Светло-серый
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/sienna-night.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type13.jpg" alt="img").type-block__img-i
+													.type-block__name Сиена ноче
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/Siena-Rosso.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type14.jpg" alt="img").type-block__img-i
+													.type-block__name Сиена россо
+											.type-block__item.swiper-slide(data-type-img="./img/home/okna/black-cherry.png")
+												.type-block__item-content
+													.type-block__img
+														img(src="./img/home/type15.jpg" alt="img").type-block__img-i
+													.type-block__name Черная вишня
+
+									.swiper-button-wrap
+										.swiper-button-prev
+										.swiper-button-next
+
+								.type-block__img-mobile
+									.type-block-big-slider__item
+										.type-block-big-slider__img(style="background-image: url('');")
+								.type-block__txt Один з найпопулярніших видів декорування вікон - ламінація віконного профілю під дерево
+								.type-block__btn
+									a(href="#").site-btn.site-btn--black.type-block__btn-i Замовити
+
+					.type-block-big-slider
+						.type-block-big-slider__inner#type-slider-big
+							.type-block-big-slider__item
+								.type-block-big-slider__img(style="background-image: url('');")
+
+		section
+			.block-wrap.site-title-wrap
+				.site-title Наши роботи
+
+			.our-work
+				.our-work__inner
+					.our-work__content
+						.our-work__slider#our-work-slider
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-half(style="background-image: url('./img/home/our-work02.png');")
+										a(href="./img/home/our-work02.png").our-work__link
+											.our-work__hover Орден Палац
+									.our-work__item-half(style="background-image: url('./img/home/our-work03.png');")
+										a(href="./img/home/our-work03.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work01.png');")
+										a(href="./img/home/our-work01.png").our-work__link
+											.our-work__hover Орден Палац
+							.our-work__item
+								.our-work__item-content
+									.our-work__item-full(style="background-image: url('./img/home/our-work04.png');")
+										a(href="./img/home/our-work04.png").our-work__link
+											.our-work__hover Орден Палац
+
+		section
+			.double-block
+				.double-block__inner
+					.last-news
+						.double-block__item
+							.last-news__inner
+								.site-title.site-title--white Останні новини нашої компанії
+								.last-news__content
+									.last-news__slider#last-news-slider
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/last-news-img.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+										.last-news__item
+											.last-news__item-content
+												.last-news__date 12.05.2020
+												a(href="#").last-news__title Сколько стоит квадратный метр вашего окна?
+												a(href="#" data-news-img="./img/home/type-big-slide.png").last-news__img
+													.more-news__img-i(style="background-image('');")
+												.last-news__text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+												.last-news__more-detail
+													a(href="#").more-detail.last-news__more-detail-i Докладніше
+								.last-news__more-mobile
+									a(href="#").site-arrow-link.last-news__more-link Всі новини
+
+									//.last-news__bottom
+									//	.last-news__bottom-list
+									//		.last-news__bottom-item
+									//			.last-news__bottom-date 15.05.2020
+									//			.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+									//			.last-news__bottom-more-detail
+									//				a(href="#").more-detail.last-news__bottom-more-detail-i Докладніше
+									//		.last-news__bottom-item
+									//			.last-news__bottom-date 15.05.2020
+									//			.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+									//			.last-news__bottom-more-detail
+									//				a(href="#").more-detail.last-news__bottom-more-detail-i Докладніше
+
+
+					.more-news
+						.more-news__inner
+							.more-news__head
+								a(href="#").site-arrow-link.more-news__head-link Всі новини
+							.more-news__content
+								.more-news__slider#more-news-slider
+									.more-news__item
+										.more-news__img
+											.more-news__img-i(style="background-image('');")
+									//.more-news__item
+									//	.more-news__img
+									//		img(src="./img/home/type-big-slide.png" alt="img").more-news__img-i
+									//.more-news__item
+									//	.more-news__img
+									//		img(src="./img/home/last-news-img.png" alt="img").more-news__img-i
+									//.more-news__item
+									//	.more-news__img
+									//		img(src="./img/home/last-news-img.png" alt="img").more-news__img-i
+
+								//.last-news__bottom.more-news__bottom
+								//	.last-news__bottom-list
+								//		.last-news__bottom-item
+								//			.last-news__bottom-date 15.05.2020
+								//			.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								//			.last-news__bottom-more-detail
+								//				a(href="#").more-detail.last-news__bottom-more-detail-i Докладніше
+								//		.last-news__bottom-item
+								//			.last-news__bottom-date 15.05.2020
+								//			.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								//			.last-news__bottom-more-detail
+								//				a(href="#").more-detail.last-news__bottom-more-detail-i Докладніше
+
+			.last-news__bottom-block
+				.block-wrap.last-news__bottom-block-inner
+					.last-news__bottom
+						.last-news__bottom-list
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+							a(href="#").last-news__bottom-item
+								.last-news__bottom-date 15.05.2020
+								.last-news__bottom-txt Как правильно выбрать металлопластиковые окна — 10 главных правил
+								.last-news__bottom-more-detail
+									.more-detail.last-news__bottom-more-detail-i Докладніше
+
+		section
+			.double-block
+				.double-block__inner
+
+					.history-block
+						.double-block__item
+							.history-block__inner
+								.site-title Iсторiя компанії
+								.history-block__content
+									h2 ВікноПлюс - надійній виробник по виготовленню металлопластиковіх вікон та дверей
+									.seo-content.history-block__txt
+										p
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+											| <br>
+											| <br>
+											| Правильно понимайте суть гарантии на окна. Например: одна компания дает на окна гарантию в 10 лет, другая – 3 года. Многие думают, что если в окне произойдет поломка в это период, то вам произведут бесплатную замену. Но это уже не гарантия а брак изделия. Когда производитель продукции определяет на свой товар гарантию, то он всего лишь здраво оценивает период, в который его продукция будет работать без видимых недостатков.
+											| <br>
+											| <br>
+											| Но когда пройдет три года, начнутся проблемы. Частые ремонты и регулировка заставят вас снова покупать новые окна. Чем больше гарантия, тем дольше ваши окна будут работать вам в удовольствие. Также обязательно обращайте внимание: гарантия распространяется на все изделие или только на отдельные его составляющие. Так, под гарантией в 10 лет может подразумеваться гарантия на сам пластик, а на стеклопакет и фурнитуру — уже другая. Но вам всегда назовут просто самую большую цифру.
+										a(href="javascript:void(0);").seo-content__more-btn.history-block__more-btn
+					.request-block.request-block--bg2
+						.double-block__item
+							.request-block__inner
+								form(action="#").request-block__from
+									.request-block__title
+										span.request-block__title-main Залишити заявку
+										span.request-block__title-txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
+									.request-block__row
+										.site-input
+											input(type="text" id="requestFormName2")
+											label(for="requestFormName2")
+												span Ім'я*
+									.request-block__row
+										.site-input
+											input(type="tel" id="requestFormPhone2")
+											label(for="requestFormPhone2")
+												span Телефон*
+									.request-block__row
+										.site-input
+											input(type="email" id="requestFormEmail2")
+											label(for="requestFormEmail2")
+												span E-mail*
+
+									.request-block__btn
+										a(href="#").site-btn.request-block__btn-i Відправити заявку
+
+
+		section
+			.smart-home
+				.smart-home__inner
+					.smart-home__title Smart home
+					.smart-home__btn
+						a(href="#").site-btn.smart-home__btn-i Докладніше
+
+

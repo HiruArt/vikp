@@ -1,0 +1,151 @@
+extends _layout
+
+block vars
+	- var pageTitle = "news item page";
+	- var pageClass = "newsitempage";
+
+block content
+	div.main-wrap
+		section
+			.site-top
+				.site-top__inner(style="background-image: url('./img/news/news-top-bg.png');")
+					.site-title-hr.site-title-hr--white Новини компанії
+					.site-top__txt Інноваційна профільна система для тих, хто звик випереджати час
+
+		section
+			.news-block
+				.news-block__inner
+					.news-block__nav
+						.news-block__list
+							.news-block__item
+								a(href="").news-block__link Новини
+							.news-block__item
+								a(href="").news-block__link.active Статтi
+							.news-block__item
+								a(href="").news-block__link Як вибрати вiкна
+							.news-block__item
+								a(href="").news-block__link Новини партнерiв
+							.news-block__item
+								a(href="").news-block__link Кориснi поради
+							.news-block__item
+								a(href="").news-block__link Партнерам
+
+					.news-block__content
+						.news-item
+							.news-item__content
+								.last-news__bottom-date.news-item__date 12.05.2020
+								h2 Сколько стоит квадратный метр вашего окна?
+								.news-item__footnote Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь...
+								.news-item__img#news-item-slider
+									.news-item__img-wrap
+										img(src="./img/home/last-news-img.png" alt="img").news-item__img-i
+									.news-item__img-wrap
+										img(src="./img/home/last-news-img.png" alt="img").news-item__img-i
+
+								p Товарищи! реализация намеченных плановых заданий требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны рамки и место обучения кадров играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт рамки и место обучения кадров требуют от нас анализа существенных финансовых и административных условий. Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+								h3 Cleanliness is the basis
+								p Равным образом укрепление и развитие структуры представляет собой интересный эксперимент проверки дальнейших направлений развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки форм развития.
+								p Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Равным образом начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. С другой стороны дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что консультация с широким активом в значительной степени обуславливает создание соответствующий условий активизации.
+								h3 Cleanliness is the basis
+								p Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Таким образом новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий играет важную роль в формировании модели развития. Равным образом укрепление и развитие структуры способствует подготовки и реализации модели развития.
+
+							.news-item__bottom
+								a(href="#").news-item__bottom-link
+									.news-item__bottom-txt Попередня
+									.news-item__bottom-title Cleanliness is the basis
+								a(href="#").news-item__bottom-link
+									.news-item__bottom-txt Наступна
+									.news-item__bottom-title Cleanliness is the basis
+
+		section
+			.recomend-news
+				.news-block__content
+					.news-block__head
+						.news-block__head-title
+							.site-title Останні новини нашої компанії
+						//.news-block__head-pagin
+						//	.pagination
+						//		a(href="").pagination__link
+						//			span.pagination__ico
+						//		.pagination__count 01 / 04
+						//		a(href="").pagination__link
+						//			span.pagination__ico
+
+					.news.recomend-news__news
+						.news__list#recomended-slider
+							.news__item
+								.news__item-content
+									.news__img
+										img(src="./img/news/news-img.png" alt="img").news__img-i
+										a(href="#").news__img-link
+											span Easy door – новий доступний продукт. Виготовлений на базі профілю VEKA Euroline T100, та фурнітурою середнього класу, від європейських виробників. Ціна: 5.000* грн!
+									.last-news__bottom-date.news__date 5.05.2020
+									a(href="#").news__name Как правильно выбрать металлопластиковые окна — 10 главных правил
+									.news__more-detail
+										a(href="#").more-detail.news__more-detail-i Докладніше
+							.news__item
+								.news__item-content
+									.news__img
+										img(src="./img/news/news-img.png" alt="img").news__img-i
+										a(href="#").news__img-link
+											span Easy door – новий доступний продукт. Виготовлений на базі профілю VEKA Euroline T100, та фурнітурою середнього класу, від європейських виробників. Ціна: 5.000* грн!
+									.last-news__bottom-date.news__date 5.05.2020
+									a(href="#").news__name Как правильно выбрать металлопластиковые окна — 10 главных правил
+									.news__more-detail
+										a(href="#").more-detail.news__more-detail-i Докладніше
+							.news__item
+								.news__item-content
+									.news__img
+										img(src="./img/news/news-img.png" alt="img").news__img-i
+										a(href="#").news__img-link
+											span Easy door – новий доступний продукт. Виготовлений на базі профілю VEKA Euroline T100, та фурнітурою середнього класу, від європейських виробників. Ціна: 5.000* грн!
+									.last-news__bottom-date.news__date 5.05.2020
+									a(href="#").news__name Как правильно выбрать металлопластиковые окна — 10 главных правил
+									.news__more-detail
+										a(href="#").more-detail.news__more-detail-i Докладніше
+							.news__item
+								.news__item-content
+									.news__img
+										img(src="./img/news/news-img.png" alt="img").news__img-i
+										a(href="#").news__img-link
+											span Easy door – новий доступний продукт. Виготовлений на базі профілю VEKA Euroline T100, та фурнітурою середнього класу, від європейських виробників. Ціна: 5.000* грн!
+									.last-news__bottom-date.news__date 5.05.2020
+									a(href="#").news__name Как правильно выбрать металлопластиковые окна — 10 главных правил
+									.news__more-detail
+										a(href="#").more-detail.news__more-detail-i Докладніше
+							.news__item
+								.news__item-content
+									.news__img
+										img(src="./img/news/news-img.png" alt="img").news__img-i
+										a(href="#").news__img-link
+											span Easy door – новий доступний продукт. Виготовлений на базі профілю VEKA Euroline T100, та фурнітурою середнього класу, від європейських виробників. Ціна: 5.000* грн!
+									.last-news__bottom-date.news__date 5.05.2020
+									a(href="#").news__name Как правильно выбрать металлопластиковые окна — 10 главных правил
+									.news__more-detail
+										a(href="#").more-detail.news__more-detail-i Докладніше
+
+		section
+			.double-block
+				.double-block__inner
+					.subscribe
+						.double-block__item
+							.subscribe__inner
+								.subscribe__content
+									.subscribe__title пІдписатись на останнІ новини
+									.subscribe__txt Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом
+									form(action="#").subscribe__form
+										.site-input
+											input(type="email" id="subskribeFormEmail2")
+											label(for="subskribeFormEmail2")
+												span E-mail*
+
+										.subscribe__btn
+											a(href="#").site-btn.subscribe__btn-i Підписатися
+
+					.subscribe-img
+						.subscribe-img--i(style="background-image: url('./img/news/sub-bg.png')")
+
+
+
+
+
