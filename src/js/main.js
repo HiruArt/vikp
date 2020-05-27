@@ -546,6 +546,7 @@ $(document).ready(function(){
 		$('#video-window').get(0).play()
 	})
 
+	AOS.init();
 
 
 });

@@ -157,8 +157,20 @@ input, textarea, button{
     position: absolute;
   }
 
+  &[data-aos="fade-right"]:before{
+    transition: 0.3s;
+    transition-delay: 0.3s;
+    height: 0;
+  }
+
   &--white{
     color: white;
+  }
+
+  &.aos-animate{
+    &:before{
+      height: 100%;
+    }
   }
 }
 
@@ -1587,6 +1599,8 @@ input, textarea, button{
     margin-bottom: 30px;
     outline: none!important;
 
+
+
     &:last-child{
       margin-bottom: 0;
     }
@@ -1669,6 +1683,16 @@ input, textarea, button{
     padding: 0 15px;
     align-items: center;
 
+    &:nth-child(2){
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3){
+      transition-delay: 0.6s;
+    }
+    &:nth-child(4){
+      transition-delay: 0.9s;
+    }
+
     @include for-1100{
       width: 50%;
       box-sizing: border-box;
@@ -1741,6 +1765,18 @@ input, textarea, button{
     box-sizing: border-box;
     margin-bottom: 1px;
 
+
+    &:nth-child(2){
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3){
+      transition-delay: 0.6s;
+    }
+    &:nth-child(4){
+      transition-delay: 0.9s;
+    }
+
+
     @include for-1100{
       width: 50%;
     }
@@ -1761,6 +1797,8 @@ input, textarea, button{
     @include for-550{
       height: 330px;
     }
+
+
 
 
     &:hover{
