@@ -450,23 +450,6 @@ $(document).ready(function(){
 		$(this).closest('.seo-content').addClass('show');
 	});
 
-	/*address and map*/
-
-	$( "#sity" ).selectmenu();
-
-	function choiceAddress() {
-		var sity = $("#sity option:selected").val();
-		$('.address-block__office-item').removeClass('active');
-		$('.address-block__office-item[data-address="' + sity + '"]').addClass('active');
-	}
-
-	choiceAddress();
-
-	$('#sity').on('selectmenuchange', function(){
-		choiceAddress();
-	});
-
-	/*address and map end*/
 
 	$('.footer__subtitle').click(function (e) {
 		if($(this).closest('.footer__column').hasClass('active')){
@@ -579,7 +562,151 @@ $(document).ready(function(){
 
 		fixedContentPos: false
 	});
+
+
+	/*address and map*/
+
+	$( "#sity" ).selectmenu();
+
+	$('.address-block__office-item').addClass('active');
+	$('#sity').on('selectmenuchange', function(){
+		choiceAddress();
+	});
+
+	$('.address-block__office-name').click(function(e){
+		var office = $(this).closest('.address-block__office-item').attr('data-office-id');
+		/*check office id from array pin*/
+		markers.forEach(function (itemMarker) {
+			itemMarker.setAnimation(null);
+		});
+		pin.forEach(function (item, index) {
+			if (item[4] == office) {
+				map.setZoom(16);
+				map.setCenter({lat: item[1], lng: item[2]});
+				markers[index].setAnimation(google.maps.Animation.BOUNCE);
+			}
+		});
+	});
+
+
+	/*address and map end*/
+
 });
+
+function choiceAddress() {
+	var sity = $("#sity option:selected").val();
+	$('.address-block__office-item').removeClass('active');
+	$('.address-block__office-item[data-address="' + sity + '"]').addClass('active');
+
+	if(sity == 'all'){
+		$('.address-block__office-item').addClass('active');
+		map.setZoom(6);
+		map.setCenter({lat: 49.500474, lng:30.299340});
+	} else {
+		sityPin.forEach(function (item) {
+			if (item[0] == sity) {
+				map.setZoom(10);
+				map.setCenter({lat: item[1][0], lng: item[1][1]});
+			}
+		});
+	}
+
+}
+
+var sityPin = [
+	[
+		['kiev'],[ 50.446689, 30.522743]
+	],
+	[
+		['lviv'],[ 49.816547, 24.069165]
+	],
+	[
+		['khmelnytskyi'],[ 49.423717, 26.9922643,]
+	]
+];
+
+var pin = [
+	['Офіційний салон м.Київ 1', 50.447527, 30.421337, 1, 'id1'],
+	['Офіційний салон м.Київ 2', 50.416227, 30.459294, 2, 'id2'],
+	['Офіційний салон м.Львів 1', 49.861669, 24.028715, 1, 'id3'],
+	['Офіційний салон м.Львів 2', 49.816547, 24.069165, 2, 'id4'],
+	['Офіційний салон м.Львів 3', 49.784003, 24.066924, 3, 'id5'],
+	['Офіційний салон м.Львів 3', 49.423717, 26.9922643, 1, 'id6']
+];
+
+var actualSity = pin;
+
+var map = '';
+function initMap() {
+
+	map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 6,
+		// center: {lat: sityPin[0][1][0], lng: sityPin[0][1][1]}
+		center: {lat: 49.500474, lng:30.299340}
+	});
+
+	setMarkers(map);
+}
+var markers = [];
+function setMarkers(map) {
+
+	var image = {
+		url: 'http://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/Map-Marker-Marker-Outside-Chartreuse-icon.png',
+	};
+
+
+	for (var i = 0; i < actualSity.length; i++) {
+		var sity = actualSity[i];
+		var marker = new google.maps.Marker({
+			position: {lat: sity[1], lng: sity[2]},
+			map: map,
+			draggable: true,
+			icon: image,
+			title: sity[0],
+			zIndex: sity[3],
+			animation: false
+		});
+		markers.push(marker);
+
+	}
+	markers.forEach(function (el, i) {
+
+		var info = new google.maps.InfoWindow({
+			content: '<h3>' + actualSity[i][0] + '</h3>'
+		});
+
+		el.addListener("click", function(){
+			info.open(map, el);
+			map.setZoom(16);
+			map.setCenter(markers[i].getPosition());
+			markers.forEach(function (itemMarker) {
+				itemMarker.setAnimation(null);
+			});
+			markers[i].setAnimation(google.maps.Animation.BOUNCE);
+		});
+
+	});
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //script fro webp img and background
@@ -607,4 +734,9 @@ $(document).ready(function(){
 //     return deferred.promise();
 //   }
 // })();
+
+
+
+
+
 

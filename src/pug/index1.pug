@@ -208,47 +208,65 @@ block content
 										.address-block__sity
 											.address-block__sity-select
 												select#sity.site-select
+													option(value="all") Всі міста
 													option(value="kiev") Київ
 													option(value="lviv") Львів
-													option(value="odessa") Одеса
+													option(value="khmelnytskyi") Хмельницький
 
-										.address-block__office-item(data-address="kiev")
-											.address-block__office-head
-												.address-block__office-name Офіс №1
-												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
-											.address-block__office-info
-												.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
-												.address-block__office-phone +38 (099) 777 77 77
-												.address-block__office-phone +38 (099) 777 77 77
-										.address-block__office-item(data-address="kiev")
-											.address-block__office-head
-												.address-block__office-name Офіс №2
-												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
-											.address-block__office-info
-												.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
-												.address-block__office-phone +38 (099) 777 77 77
-												.address-block__office-phone +38 (099) 777 77 77
-										.address-block__office-item(data-address="odessa")
-											.address-block__office-head
-												.address-block__office-name Офіс №3
-												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
-											.address-block__office-info
-												.address-block__office-address м. Одеса, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
-												.address-block__office-phone +38 (099) 777 77 77
-												.address-block__office-phone +38 (099) 777 77 77
-										.address-block__office-item(data-address="lviv")
-											.address-block__office-head
-												.address-block__office-name Офіс №4
-												a(href="#").site-arrow-link.address-block__office-link Залишити заявку
-											.address-block__office-info
-												.address-block__office-address м. Львів, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
-												.address-block__office-phone +38 (099) 777 77 77
-												.address-block__office-phone +38 (099) 777 77 77
+
+										.address-block__office-item-wrap
+											.address-block__office-item(data-address="kiev" data-office-id="id1")
+												.address-block__office-head
+													.address-block__office-name Офіс №1
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
+											.address-block__office-item(data-address="kiev" data-office-id="id2")
+												.address-block__office-head
+													.address-block__office-name Офіс №2
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Київ, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
+											.address-block__office-item(data-address="khmelnytskyi" data-office-id="id3")
+												.address-block__office-head
+													.address-block__office-name Офіс №3
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Одеса, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
+											.address-block__office-item(data-address="lviv" data-office-id="id4")
+												.address-block__office-head
+													.address-block__office-name Офіс №4
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Львів, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
+											.address-block__office-item(data-address="lviv" data-office-id="id5")
+												.address-block__office-head
+													.address-block__office-name Офіс №5
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Львів, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
+											.address-block__office-item(data-address="lviv" data-office-id="id6")
+												.address-block__office-head
+													.address-block__office-name Офіс №6
+													a(href="#").site-arrow-link.address-block__office-link Залишити заявку
+												.address-block__office-info
+													.address-block__office-address м. Львів, вул. Уманська 43, буд 55<br> (ст. м. Вокзальна)
+													.address-block__office-phone +38 (099) 777 77 77
+													.address-block__office-phone +38 (099) 777 77 77
 
 					.map-block
 						.map-block__inner
-							iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24896.610995416322!2d30.524645443659377!3d50.41436909935062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1589891588407!5m2!1sru!2sua', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
-
+							#map
 
 		section
 			.block-wrap.site-title-wrap(data-aos="fade-right")
